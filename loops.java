@@ -34,7 +34,7 @@ public class loops{
                 do{
                     System.out.println("i is: "+i);
                     i++;
-                }while(false);
+                }while(i<10);//condition();
         sc.close();
     }
 }

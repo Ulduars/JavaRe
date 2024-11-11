@@ -1,0 +1,23 @@
+/* 
+Luis Gomez de la Vega 
+Uses a Queue to print out names 
+November 11, 2024
+*/
+import java.util.*;
+import java.io.*;
+public class Files{
+    public static void main(String[] args){
+        LinkedList<String> names = new LinkedList<String>();
+        names.add("Luis");
+        names.add("Neil");
+        names.add("Abhi");
+        names.add("Yuno");
+        
+        System.out.println(names.remove());
+        System.out.println(names.remove());
+        System.out.println(names.remove());
+        System.out.println(names.remove());
+
+        //Queue- First In First Out
+    }
+}
