@@ -3,11 +3,15 @@
 Luis Gomez de la Vega 
 Uses a Stack to print out names
 */
+import java.io.FileNotFoundException;
 import java.util.*;
-import java.io.*;
-public class CollectionsQ{
-    public static void main(String[] args){
-        LinkedList<String> names = new LinkedList<String>();        
+
+public class CollectionsStack{
+    // Stack traces Allow you to see the methods a computer took
+    public static void main(String[] args) throws FileNotFoundException{
+
+        LinkedList<String> names = new LinkedList<String>();   
+
         names.push("Luis");
         names.push("Neil");
         names.push("Abhi");
@@ -17,6 +21,7 @@ public class CollectionsQ{
         System.out.println(names.pop());
         System.out.println(names.pop());
         System.out.println(names.pop());
+        
               //Stacks use 'push' and 'pop'
     }
 }
