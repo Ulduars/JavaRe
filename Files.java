@@ -7,18 +7,16 @@ public class Files{
 
     public static void main(final String[] args) throws Exception{
 
-        File file = new File("C:\\Users\\luisg\\OneDrive\\Desktop\\VS Workspace\\VSJ\\Clubies.txt");
+        File names = new File("C:\\Users\\luisg\\OneDrive\\Desktop\\VS Workspace\\VSJ\\Clubies.txt");    // Input a File with names
+        Scanner reader = new Scanner(names);
+        List<String> students = new ArrayList<String>();
 
-        Scanner sc = new Scanner(file);
-
-        List<String> stds = new ArrayList<String>();
-
-        while (sc.hasNextLine()) {
-            stds.add(sc.nextLine());
+            while (reader.hasNextLine()) {
+                students.add(reader.nextLine());
+                }
+            for(int i =0; i<students.size(); i++){
+                    System.out.println("Name: " + students.get(i));
         }
-        for(int i =0; i<stds.size(); i++){
-            System.out.println("Name: " + stds.get(i));
-        }
-        sc.close();
+        reader.close();
     } 
 }
