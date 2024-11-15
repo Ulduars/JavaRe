@@ -10,18 +10,17 @@ public class CollectionsStack{
     // Stack traces Allow you to see the methods a computer took
     public static void main(String[] args) throws FileNotFoundException{
 
-        LinkedList<String> names = new LinkedList<String>();   
-
-        names.push("Luis");
-        names.push("Neil");
-        names.push("Abhi");
-        names.push("Yuno");
-                
-        System.out.println(names.pop());
-        System.out.println(names.pop());
-        System.out.println(names.pop());
-        System.out.println(names.pop());
+        LinkedList<String> names = new LinkedList<String>();  
         
-              //Stacks use 'push' and 'pop'
+            names.push("Luis");
+            names.push("Neil");
+            names.push("Abhi");
+            names.push("Yuno");
+                
+            System.out.println(names.pop());
+            System.out.println(names.pop());
+            System.out.println(names.pop());
+            System.out.println(names.pop());
+                //Stacks use 'push' and 'pop'
     }
 }
